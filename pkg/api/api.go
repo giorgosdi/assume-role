@@ -9,7 +9,6 @@ import (
 )
 
 func createSession(profile string) (*sts.STS, error) {
-	// stsClient := session.Must(session.NewSession())
 	stsSession, err := session.NewSessionWithOptions(session.Options{
 		Profile: profile,
 	})
